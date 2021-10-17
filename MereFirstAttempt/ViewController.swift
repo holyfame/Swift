@@ -34,6 +34,15 @@ class ViewController: UIViewController {
 //    }
     
     private var currentColor: UIColor = .systemBlue
+
+    
+    @IBOutlet weak var tapMeView: UIView!
+    @IBOutlet weak var tapMeButton: UIButton?
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var sliderVerticalConstraint: NSLayoutConstraint!
+    @IBOutlet weak var sliderHorizontalConstraint: NSLayoutConstraint!
+    
     
     @IBAction func buttonDidTap(_ sender: UIButton) {
 //        print(tapMeButton?.superview?.backgroundColor == .systemIndigo)
@@ -47,15 +56,12 @@ class ViewController: UIViewController {
 //
 //        tapMeButton?.setTitleColor(currentColor, for: .normal)
         
+//        let viewController = ManuallyCraftedViewController()
+//        self.navigationController?.pushViewController(viewController, animated: true)
+        
+        let tableViewController = TodayPlansTableViewController()
+        self.navigationController?.pushViewController(tableViewController, animated: true)
     }
-
-    
-    @IBOutlet weak var tapMeView: UIView!
-    @IBOutlet weak var tapMeButton: UIButton?
-    @IBOutlet weak var slider: UISlider!
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var sliderVerticalConstraint: NSLayoutConstraint!
-    @IBOutlet weak var sliderHorizontalConstraint: NSLayoutConstraint!
     
     
     @IBAction func segmentDidChange(_ sender: UISegmentedControl) {
@@ -66,19 +72,24 @@ class ViewController: UIViewController {
         case .zero:
 //            textField?.isHidden = false
 //            slider.isHidden = true
-            tapMeView.isHidden = true
+//            tapMeView.isHidden = true
+            self.slider.alpha = 1
+            
             sliderVerticalConstraint?.priority = .defaultLow
             sliderHorizontalConstraint?.priority = .defaultHigh
         case 1:
 //            textField.isHidden = true
 //            slider.isHidden = false
-            tapMeView.isHidden = false
+//            tapMeView.isHidden = false
+            self.slider.alpha = 0
+            
             sliderVerticalConstraint?.priority = .defaultHigh
             sliderHorizontalConstraint?.priority = .defaultLow
         default:
             return
         }
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

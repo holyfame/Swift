@@ -16,6 +16,10 @@
 		951E1471270135EA00055710 /* MereFirstAttemptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E1470270135EA00055710 /* MereFirstAttemptTests.swift */; };
 		951E147B270135EA00055710 /* MereFirstAttemptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E147A270135EA00055710 /* MereFirstAttemptUITests.swift */; };
 		951E147D270135EA00055710 /* MereFirstAttemptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E147C270135EA00055710 /* MereFirstAttemptUITestsLaunchTests.swift */; };
+		953D4A1A271AF8080005FA43 /* PlansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D4A19271AF8080005FA43 /* PlansTableViewController.swift */; };
+		953D4A1D271AFB170005FA43 /* PlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D4A1C271AFB170005FA43 /* PlanTableViewCell.swift */; };
+		958C10952704491D001830ED /* ManuallyCraftedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C10942704491D001830ED /* ManuallyCraftedViewController.swift */; };
+		958C1098270449D3001830ED /* ManuallyCraftedUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C1097270449D3001830ED /* ManuallyCraftedUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		951E1476270135EA00055710 /* MereFirstAttemptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MereFirstAttemptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		951E147A270135EA00055710 /* MereFirstAttemptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MereFirstAttemptUITests.swift; sourceTree = "<group>"; };
 		951E147C270135EA00055710 /* MereFirstAttemptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MereFirstAttemptUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		953D4A19271AF8080005FA43 /* PlansTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansTableViewController.swift; sourceTree = "<group>"; };
+		953D4A1C271AFB170005FA43 /* PlanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTableViewCell.swift; sourceTree = "<group>"; };
+		958C10942704491D001830ED /* ManuallyCraftedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManuallyCraftedViewController.swift; sourceTree = "<group>"; };
+		958C1097270449D3001830ED /* ManuallyCraftedUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManuallyCraftedUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		951E1458270135E700055710 /* MereFirstAttempt */ = {
 			isa = PBXGroup;
 			children = (
+				95A2808627141C6900D5797F /* TableViewFeature */,
+				958C1096270449A4001830ED /* ManuallyCrafted */,
 				951E1459270135E700055710 /* AppDelegate.swift */,
 				951E145B270135E700055710 /* SceneDelegate.swift */,
 				951E145D270135E700055710 /* ViewController.swift */,
@@ -125,6 +135,32 @@
 				951E147C270135EA00055710 /* MereFirstAttemptUITestsLaunchTests.swift */,
 			);
 			path = MereFirstAttemptUITests;
+			sourceTree = "<group>";
+		};
+		953D4A1B271AFAE20005FA43 /* PlanTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				953D4A1C271AFB170005FA43 /* PlanTableViewCell.swift */,
+			);
+			path = PlanTableViewCell;
+			sourceTree = "<group>";
+		};
+		958C1096270449A4001830ED /* ManuallyCrafted */ = {
+			isa = PBXGroup;
+			children = (
+				958C10942704491D001830ED /* ManuallyCraftedViewController.swift */,
+				958C1097270449D3001830ED /* ManuallyCraftedUIView.swift */,
+			);
+			path = ManuallyCrafted;
+			sourceTree = "<group>";
+		};
+		95A2808627141C6900D5797F /* TableViewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				953D4A1B271AFAE20005FA43 /* PlanTableViewCell */,
+				953D4A19271AF8080005FA43 /* PlansTableViewController.swift */,
+			);
+			path = TableViewFeature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +295,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				951E145E270135E700055710 /* ViewController.swift in Sources */,
+				953D4A1D271AFB170005FA43 /* PlanTableViewCell.swift in Sources */,
+				958C10952704491D001830ED /* ManuallyCraftedViewController.swift in Sources */,
+				953D4A1A271AF8080005FA43 /* PlansTableViewController.swift in Sources */,
 				951E145A270135E700055710 /* AppDelegate.swift in Sources */,
+				958C1098270449D3001830ED /* ManuallyCraftedUIView.swift in Sources */,
 				951E145C270135E700055710 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
