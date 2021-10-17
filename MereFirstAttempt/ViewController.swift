@@ -57,10 +57,9 @@ class ViewController: UIViewController {
 //        tapMeButton?.setTitleColor(currentColor, for: .normal)
         
 //        let viewController = ManuallyCraftedViewController()
-//        self.navigationController?.pushViewController(viewController, animated: true)
-        
-        let tableViewController = TodayPlansTableViewController()
-        self.navigationController?.pushViewController(tableViewController, animated: true)
+//        let viewController = TodayPlansTableViewController()
+        let viewController = CustomTableViewController()
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     
@@ -70,6 +69,14 @@ class ViewController: UIViewController {
 
         switch sender.selectedSegmentIndex {
         case .zero:
+//            textField.isHidden = true
+//            slider.isHidden = false
+//            tapMeView.isHidden = false
+            self.slider.alpha = 0
+            sliderVerticalConstraint?.priority = .defaultHigh
+            sliderHorizontalConstraint?.priority = .defaultLow
+            
+        case 1:
 //            textField?.isHidden = false
 //            slider.isHidden = true
 //            tapMeView.isHidden = true
@@ -77,14 +84,7 @@ class ViewController: UIViewController {
             
             sliderVerticalConstraint?.priority = .defaultLow
             sliderHorizontalConstraint?.priority = .defaultHigh
-        case 1:
-//            textField.isHidden = true
-//            slider.isHidden = false
-//            tapMeView.isHidden = false
-            self.slider.alpha = 0
             
-            sliderVerticalConstraint?.priority = .defaultHigh
-            sliderHorizontalConstraint?.priority = .defaultLow
         default:
             return
         }
@@ -95,8 +95,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.sliderVerticalConstraint?.priority = .defaultLow
-        self.sliderHorizontalConstraint?.priority = .defaultHigh
+        self.slider.alpha = 0
+        self.sliderVerticalConstraint?.priority = .defaultHigh
+        self.sliderHorizontalConstraint?.priority = .defaultLow
         
 //        print("viewDidLoad")
     }

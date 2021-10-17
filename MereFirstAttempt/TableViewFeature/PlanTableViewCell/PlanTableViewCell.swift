@@ -54,53 +54,6 @@ class PlanTableViewCell: UITableViewCell {
     }
     
     func setupConstraints() {
-        
-//        let titleLabelTopConstraint = NSLayoutConstraint(
-//            item: titleLabel,
-//            attribute: .top,
-//            relatedBy: .equal,
-//            toItem: self,
-//            attribute: .top,
-//            multiplier: 1,
-//            constant: 8
-//        )
-//
-//        let titleLableLeadingConstraint = NSLayoutConstraint(
-//            item: titleLabel,
-//            attribute: .leading,
-//            relatedBy: .equal,
-//            toItem: self,
-//            attribute: .leadingMargin,
-//            multiplier: 1,
-//            constant: 8
-//        )
-//
-//        let titleLabelCenterConstraint = NSLayoutConstraint(
-//            item: titleLabel,
-//            attribute: .centerY,
-//            relatedBy: .equal,
-//            toItem: completeSwitcher,
-//            attribute: .centerY,
-//            multiplier: 1,
-//            constant: .zero
-//        )
-//
-//        let completeSwitcherTrailingConstraint = NSLayoutConstraint(
-//            item: completeSwitcher,
-//            attribute: .trailing,
-//            relatedBy: .equal,
-//            toItem: self,
-//            attribute: .trailingMargin,
-//            multiplier: 1,
-//            constant: 8
-//        )
-//
-//        NSLayoutConstraint.activate([
-//            titleLabelTopConstraint,
-//            titleLableLeadingConstraint,
-//            titleLabelCenterConstraint,
-//            completeSwitcherTrailingConstraint
-//        ])
 
         titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24).isActive = true
