@@ -58,7 +58,10 @@ class ViewController: UIViewController {
         
 //        let viewController = ManuallyCraftedViewController()
 //        let viewController = TodayPlansTableViewController()
-        let viewController = CustomTableViewController()
+//        let viewController = CustomTableViewController()
+        
+        let layout = UICollectionViewFlowLayout()
+        let viewController = CustomCollectionViewController(collectionViewLayout: layout)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     

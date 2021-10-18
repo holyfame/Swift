@@ -21,6 +21,8 @@
 		953D4A20271CD3B60005FA43 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D4A1F271CD3B60005FA43 /* CustomTableView.swift */; };
 		953D4A22271CD5580005FA43 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D4A21271CD5580005FA43 /* CustomTableViewController.swift */; };
 		953D4A24271CE2D70005FA43 /* CustomTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D4A23271CE2D70005FA43 /* CustomTableHeaderView.swift */; };
+		953D4A27271D571B0005FA43 /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D4A26271D571B0005FA43 /* CustomCollectionViewController.swift */; };
+		953D4A29271D5F670005FA43 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D4A28271D5F670005FA43 /* HeaderCollectionReusableView.swift */; };
 		958C10952704491D001830ED /* ManuallyCraftedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C10942704491D001830ED /* ManuallyCraftedViewController.swift */; };
 		958C1098270449D3001830ED /* ManuallyCraftedUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C1097270449D3001830ED /* ManuallyCraftedUIView.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		953D4A1F271CD3B60005FA43 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
 		953D4A21271CD5580005FA43 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		953D4A23271CE2D70005FA43 /* CustomTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableHeaderView.swift; sourceTree = "<group>"; };
+		953D4A26271D571B0005FA43 /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
+		953D4A28271D5F670005FA43 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		958C10942704491D001830ED /* ManuallyCraftedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManuallyCraftedViewController.swift; sourceTree = "<group>"; };
 		958C1097270449D3001830ED /* ManuallyCraftedUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManuallyCraftedUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +165,15 @@
 			path = CustomTableView;
 			sourceTree = "<group>";
 		};
+		953D4A25271D56FD0005FA43 /* CustomCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				953D4A26271D571B0005FA43 /* CustomCollectionViewController.swift */,
+				953D4A28271D5F670005FA43 /* HeaderCollectionReusableView.swift */,
+			);
+			path = CustomCollectionViewController;
+			sourceTree = "<group>";
+		};
 		958C1096270449A4001830ED /* ManuallyCrafted */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +186,7 @@
 		95A2808627141C6900D5797F /* TableViewFeature */ = {
 			isa = PBXGroup;
 			children = (
+				953D4A25271D56FD0005FA43 /* CustomCollectionViewController */,
 				953D4A1E271CD3670005FA43 /* CustomTableView */,
 				953D4A1B271AFAE20005FA43 /* PlanTableViewCell */,
 				953D4A19271AF8080005FA43 /* PlansTableViewController.swift */,
@@ -315,11 +329,13 @@
 				953D4A1D271AFB170005FA43 /* PlanTableViewCell.swift in Sources */,
 				958C10952704491D001830ED /* ManuallyCraftedViewController.swift in Sources */,
 				953D4A1A271AF8080005FA43 /* PlansTableViewController.swift in Sources */,
+				953D4A29271D5F670005FA43 /* HeaderCollectionReusableView.swift in Sources */,
 				951E145A270135E700055710 /* AppDelegate.swift in Sources */,
 				958C1098270449D3001830ED /* ManuallyCraftedUIView.swift in Sources */,
 				953D4A20271CD3B60005FA43 /* CustomTableView.swift in Sources */,
 				953D4A24271CE2D70005FA43 /* CustomTableHeaderView.swift in Sources */,
 				953D4A22271CD5580005FA43 /* CustomTableViewController.swift in Sources */,
+				953D4A27271D571B0005FA43 /* CustomCollectionViewController.swift in Sources */,
 				951E145C270135E700055710 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
