@@ -165,13 +165,13 @@
 			path = CustomTableView;
 			sourceTree = "<group>";
 		};
-		953D4A25271D56FD0005FA43 /* CustomCollectionViewController */ = {
+		953D4A25271D56FD0005FA43 /* CustomCollectionView */ = {
 			isa = PBXGroup;
 			children = (
 				953D4A26271D571B0005FA43 /* CustomCollectionViewController.swift */,
 				953D4A28271D5F670005FA43 /* HeaderCollectionReusableView.swift */,
 			);
-			path = CustomCollectionViewController;
+			path = CustomCollectionView;
 			sourceTree = "<group>";
 		};
 		958C1096270449A4001830ED /* ManuallyCrafted */ = {
@@ -186,7 +186,7 @@
 		95A2808627141C6900D5797F /* TableViewFeature */ = {
 			isa = PBXGroup;
 			children = (
-				953D4A25271D56FD0005FA43 /* CustomCollectionViewController */,
+				953D4A25271D56FD0005FA43 /* CustomCollectionView */,
 				953D4A1E271CD3670005FA43 /* CustomTableView */,
 				953D4A1B271AFAE20005FA43 /* PlanTableViewCell */,
 				953D4A19271AF8080005FA43 /* PlansTableViewController.swift */,
