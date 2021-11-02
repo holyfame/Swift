@@ -25,6 +25,7 @@
 		953D4A29271D5F670005FA43 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D4A28271D5F670005FA43 /* HeaderCollectionReusableView.swift */; };
 		958C10952704491D001830ED /* ManuallyCraftedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C10942704491D001830ED /* ManuallyCraftedViewController.swift */; };
 		958C1098270449D3001830ED /* ManuallyCraftedUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C1097270449D3001830ED /* ManuallyCraftedUIView.swift */; };
+		95F97B0B2731712500442527 /* AnimateableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F97B0A2731712500442527 /* AnimateableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		953D4A28271D5F670005FA43 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		958C10942704491D001830ED /* ManuallyCraftedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManuallyCraftedViewController.swift; sourceTree = "<group>"; };
 		958C1097270449D3001830ED /* ManuallyCraftedUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManuallyCraftedUIView.swift; sourceTree = "<group>"; };
+		95F97B0A2731712500442527 /* AnimateableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		951E1458270135E700055710 /* MereFirstAttempt */ = {
 			isa = PBXGroup;
 			children = (
+				95F97B09273170E400442527 /* AnimateableViewController */,
 				95A2808627141C6900D5797F /* TableViewFeature */,
 				958C1096270449A4001830ED /* ManuallyCrafted */,
 				951E1459270135E700055710 /* AppDelegate.swift */,
@@ -192,6 +195,14 @@
 				953D4A19271AF8080005FA43 /* PlansTableViewController.swift */,
 			);
 			path = TableViewFeature;
+			sourceTree = "<group>";
+		};
+		95F97B09273170E400442527 /* AnimateableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				95F97B0A2731712500442527 /* AnimateableViewController.swift */,
+			);
+			path = AnimateableViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +344,7 @@
 				951E145A270135E700055710 /* AppDelegate.swift in Sources */,
 				958C1098270449D3001830ED /* ManuallyCraftedUIView.swift in Sources */,
 				953D4A20271CD3B60005FA43 /* CustomTableView.swift in Sources */,
+				95F97B0B2731712500442527 /* AnimateableViewController.swift in Sources */,
 				953D4A24271CE2D70005FA43 /* CustomTableHeaderView.swift in Sources */,
 				953D4A22271CD5580005FA43 /* CustomTableViewController.swift in Sources */,
 				953D4A27271D571B0005FA43 /* CustomCollectionViewController.swift in Sources */,
